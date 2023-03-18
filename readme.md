@@ -289,4 +289,7 @@ docker build -t java-demo:v1.0 .
 docker-compose up -d
 ```
 
-<img width="1888" alt="image" src="https://user-images.githubusercontent.com/31679768/226114776-79f2499e-15ff-44b1-9651-fc902513ca46.png">
+<img width="1070" alt="image" src="https://user-images.githubusercontent.com/31679768/226114858-5308130f-7934-49b7-9e75-e75f4cd5e8a0.png">
+
+
+        volumes:
