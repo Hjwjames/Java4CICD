@@ -1,16 +1,22 @@
+jenkenworkspace="/var/jenkins_home/workspace/"
+projectname="javademo"
+projectworkspace="/data/workspace/"
+
+
 # 移除镜像
-cd /data/workspace/javademo
+cd ${projectworkspace}${projectname}
 docker-compose down
 docker rmi java-demo:v1.0
 # 生成工作路径
-cd /data/jenkins/workspace/first
-rm -rf /data/workspace/javademo/
-mkdir /data/workspace/javademo
-cp Dockerfile /data/workspace/javademo/
-cp docker-compose.yml /data/workspace/javademo
-cd /data/jenkins/workspace/first/target
-cp java-demo-0.0.1-SNAPSHOT.jar /data/workspace/javademo
-cd /data/workspace/javademo
+cd ${jenkenworkspace}${projectname}
+rm -rf ${projectworkspace}${projectname}
+mkdir ${projectworkspace}${projectname}
+cp Dockerfile ${projectworkspace}${projectname}
+cp docker-compose.yml ${projectworkspace}${projectname}
+cp build.sh ${projectworkspace}${projectname}
+cd ${jenkenworkspace}${projectname}/target
+cp java-demo-0.0.1-SNAPSHOT.jar ${projectworkspace}${projectname}
+cd ${projectworkspace}${projectname}
 # 生成镜像
 docker build -t java-demo:v1.0 .
 # 构建项目
