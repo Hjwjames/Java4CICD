@@ -155,7 +155,8 @@ docker-compose down  #关闭
 
 https://start.spring.io/
 
-![image-20230318224235685](/Users/hjwjames/Library/Application Support/typora-user-images/image-20230318224235685.png)
+<img width="777" alt="image" src="https://user-images.githubusercontent.com/31679768/226114646-fd889574-a167-4f4e-89dd-06f243c20ae5.png">
+
 
 - 简单写个Controller访问Redis
 
@@ -215,6 +216,8 @@ networks:
 - 配置Jenkins. Manage Jenkins ---- >全局工具配置
 
 ​			设置JDK、GIT、MAVEN
+<img width="863" alt="image" src="https://user-images.githubusercontent.com/31679768/226114726-544c4093-9bc4-434a-b65b-c879b91576d6.png">
+
 
 - 构建项目 ----> MAVEN项目
 
@@ -286,3 +289,4 @@ docker build -t java-demo:v1.0 .
 docker-compose up -d
 ```
 
+<img width="1888" alt="image" src="https://user-images.githubusercontent.com/31679768/226114776-79f2499e-15ff-44b1-9651-fc902513ca46.png">
