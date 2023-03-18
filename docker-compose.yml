@@ -1,0 +1,18 @@
+
+version: "3"
+services:
+  javaDemo:
+    image:java-demo:v1.0
+    container_name: javaDemo
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8081:8080"
+    volumes:
+      - /data/workspace/javademo/data:/data
+    networks:
+      - hjwbridge
+
+networks:
+  hjwbridge:
